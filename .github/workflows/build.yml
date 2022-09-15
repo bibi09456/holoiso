@@ -36,3 +36,8 @@ jobs:
         with:
           name: holoiso
           path: out/*.iso
+
+      - uses: svenstaro/upload-release-action@v2
+        with:
+          file: out/*.iso
+          overwrite: true
